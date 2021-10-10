@@ -1,8 +1,9 @@
-from typing import DefaultDict
+from collections import defaultdict
+
 
 class Solution:
     def stringToDict(str):
-        kv = DefaultDict();
+        kv = defaultdict();
         for i in range(len(str)):
             kv[i] = str[i]
         return kv
